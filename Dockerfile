@@ -1,4 +1,4 @@
-FROM ubuntu:26.0.1
+FROM ubuntu:24.04
 RUN apt-get update -y \
 && apt-get dist-upgrade -y \
 && apt-get autoremove -y \
