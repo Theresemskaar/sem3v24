@@ -1,0 +1,27 @@
+# Ignore everything
+*
+
+# But not these files...
+!/.gitignore
+
+!*.go
+!go.sum
+!go.mod
+!*.svg
+!*.jpg
+
+!README.md
+!LICENSE
+
+!*.c
+!*.java
+!*.h
+!*.rs
+!*.sh
+!*.py
+!*.cs
+
+# !Makefile
+
+# ...even if they are in subdirectories
+!*/
