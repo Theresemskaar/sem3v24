@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 RUN apt-get update -y \
 && apt-get dist-upgrade -y \
 && apt-get autoremove -y \
