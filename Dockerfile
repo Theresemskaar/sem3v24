@@ -16,9 +16,9 @@ RUN git clone https://github.com/Theresemskaar/sem3v24.git \
 && cd sem3v24 \
 && go build -o $GOPATH/bin simplest-webserver.go
 ENV SERVICE_NAME="simplest-webserver"
-RUN addgroup --gid 900 --system $SERVICE_NAME \
-&& adduser --system --ingroup $SERVICE_NAME --shell /bin/false --uid 900
-$SERVICE_NAME
+RUN addgroup --gid 900 --system $theresemskaar \
+&& adduser --system --ingroup $theresemskaar --shell /bin/false --uid 900
+$theresemskaar
 EXPOSE 8080
 USER $SERVICE_NAME
 CMD ["simplest-webserver"]
