@@ -12,8 +12,8 @@ ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH"
 WORKDIR $GOPATH/src
-RUN git clone https://github.com/uia-worker/is105-2024-April.git \
-&& cd is105-2024-April \
+RUN git clone https://github.com/Theresemskaar/sem3v24.git \
+&& cd sem3v24 \
 && go build -o $GOPATH/bin simplest-webserver.go
 ENV SERVICE_NAME="simplest-webserver"
 RUN addgroup --gid 900 --system $SERVICE_NAME \
