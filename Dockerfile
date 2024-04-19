@@ -19,6 +19,6 @@ ENV SERVICE_NAME="simplest-webserver"
 RUN addgroup --gid 900 --system $SERVICE_NAME \
 && adduser --system --ingroup $SERVICE_NAME --shell /bin/false --uid 900
 $SERVICE_NAME
-EXPOSE 8088
+EXPOSE 8080
 USER $SERVICE_NAME
 CMD ["simplest-webserver"]
